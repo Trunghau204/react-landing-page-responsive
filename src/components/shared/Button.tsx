@@ -1,7 +1,7 @@
 interface ButtonProps {
   className?: string;
   children: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
 export const Button = ({ onClick, children, className = " " }: ButtonProps) => {
   return (
